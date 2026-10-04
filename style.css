@@ -1,0 +1,62 @@
+/* Responsive Web Design - bài nộp */
+
+/* Thiết lập cơ bản */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #243247;
+    background: #f4f7fb;
+}
+
+.page-header {
+    text-align: center;
+    margin: 0 auto 24px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #dce4ef;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(30, 50, 80, 0.08);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Truy vấn phương tiện #1: từ 772px */
+@media screen and (min-width: 772px) {
+    .card {
+        width: 45vw;
+    }
+
+    .card img {
+        max-width: 30vw;
+    }
+}
+
+/* Truy vấn phương tiện #2: từ 998px */
+@media screen and (min-width: 998px) {
+    .card {
+        width: 30vw;
+    }
+}
